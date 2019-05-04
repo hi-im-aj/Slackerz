@@ -1,0 +1,57 @@
+#wrapper {
+	position: relative;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 370px);
+	height: calc(100vh - 85px);
+	font-family: "Raleway",serif;
+}
+#leftWrapper {
+	float: left;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+}
+#leftWrapper img {
+	width: calc((100vw - 370px) / 2);
+	position: relative;
+}
+#rightWrapper {
+	float: right;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+}
+#rightWrapper:before {
+	content: "";
+	width: 3px;
+	height: 150%;
+	position: absolute;
+	float: left;
+	top: calc(-50% / 2);
+	left: 0;
+	background: var(--themeColor1);
+}
+#rightWrapper form {
+	width: 300px;
+	position: relative;
+	left: 50px;
+}
+#rightWrapper form h1 {
+	border-bottom: 6px solid;
+	color: var(--themeColor1);
+	margin-bottom: 20px;
+}
+#rightWrapper .textBox {
+	margin: 20px 0;
+}
+#rightWrapper .textBox input {
+	width: 250px;
+	height: 30px;
+}
+#rightWrapper .textBox input:focus {
+	border-color: var(--themeColor1);
+}

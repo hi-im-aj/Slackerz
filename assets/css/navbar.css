@@ -1,0 +1,107 @@
+#navbar {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 370px);
+	height: 60px;
+	z-index: 100;
+	font-family: "Raleway",serif;
+}
+#navLeft {
+	float: left;
+	display: inline-flex;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#navLeft a {
+	text-decoration: none;
+	transition: 200ms;
+}
+#navLeft a:hover {
+	transform: scale(1.03);
+}
+#navTitle {
+	color: var(--themeColor2);
+}
+#navTitle span {
+	color: var(--themeColor1);
+}
+#navRight {
+	float: right;
+}
+.navList {
+	list-style: none;
+	display: inline-flex;
+	line-height: 60px;
+}
+.navList li a {
+	text-decoration: none;
+	padding: 15px 30px;
+}
+#navList1 {
+	margin-right: 20px;
+}
+#navList1 li a {
+	color: #555;
+	position: relative;
+	transition: 200ms;
+}
+#navList1 li a:hover {
+	color: var(--themeColor3);
+}
+#navList1 li a:after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: var(--themeColor3);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	transform: scaleX(0);
+	transform-origin: bottom;
+	transition: 200ms;
+}
+#navList1 li a:hover:after {
+	transform: scaleX(.5);
+}
+#navList2 {
+	
+}
+#navList2 li a {
+	color: #222;
+}
+#loginItem a {
+	position: relative;
+	transition: 200ms;
+}
+#loginItem a:hover {
+	color: var(--themeColor3);
+}
+#loginItem a:after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: var(--themeColor3);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	transform: scaleX(0);
+	transform-origin: bottom;
+	transition: 200ms;
+}
+#loginItem a:hover:after {
+	transform: scaleX(.5);
+}
+#navList2 #signupItem a {
+	color: #fff;
+	background: var(--themeColor1);
+	border-radius: 80px;
+	transition: 200ms;
+}
+#navList2 #signupItem a:hover {
+	background: var(--themeColor3);
+}

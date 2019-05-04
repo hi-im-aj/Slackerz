@@ -1,0 +1,74 @@
+body {
+	font-family: "Raleway",serif;
+}
+#wrapper1 {
+	position: relative;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 370px);
+	height: calc(100vh - 85px);
+}
+#leftWrapper1 {
+	float: left;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+}
+#leftWrapper1 h1 {
+	color: #222;
+	position: relative;
+	top: -50px;
+	width: 600px;
+	font-weight: 300;
+	padding-bottom: 10px;
+	line-height: 56.7px;
+	font-size: 42px;
+}
+#leftWrapper1 p {
+	color: #555;
+	position: relative;
+	top: -40px;
+	width: 425px;
+	font-weight: 300;
+	line-height: 29.7px;
+	font-size: 18px;
+}
+#leftWrapper1 a {
+	color: #fff;
+	background: var(--themeColor1);
+	border-radius: 80px;
+	text-decoration: none;
+	padding: 15px 40px;
+	position: relative;
+	top: 0px;
+	transition: 200ms;
+}
+#leftWrapper1 a:hover {
+	background: var(--themeColor3);
+}
+#rightWrapper1 {
+	float: right;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+}
+#rightWrapper1 img {
+	width: calc((100vw - 370px) / 2);
+	position: relative;
+	right: -50px;
+}
+#shapes img {
+	position: absolute;
+	z-index: -99;
+}
+#shape1 {
+	top: 45vh;
+	left: -150px;
+}
+#shape2 {
+	top: -2px;
+	left: -150px;
+}
