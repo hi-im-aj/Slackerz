@@ -1,0 +1,67 @@
+#wrapper {
+	position: relative;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 370px);
+	height: calc(100vh - 85px);
+	font-family: "Raleway",serif;
+}
+#leftWrapper {
+	float: left;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+}
+#leftWrapper #signupImg {
+	width: calc((100vw - 370px) / 2);
+	float: right;
+}
+#leftWrapper #loginImg {
+	max-height: 650px;
+	float: right;
+}
+#rightWrapper {
+	float: left;
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: calc((100vw - 370px) / 2);
+	width: 300px;
+}
+#formTitle {
+	margin-bottom: 1.65em;
+	color: var(--themeColor1);
+	border-bottom: 2px solid var(--themeColor1);
+	width: 117.5px;
+}
+#rightWrapper .textBox {
+	margin-bottom: 1.65em;
+	border-bottom: 1px solid var(--themeColor1);
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+.textBox i {
+	position: relative;
+	top: 5px;
+	color: var(--themeColor1);
+}
+.textBox input {
+	font-size: 22px;
+	padding: 5px 5px 0 5px;
+	width: 260px;
+	float: right;
+	border: none;
+	color: var(--themeColor2);
+}
+.buttonBox button {
+	font-size: 22px;
+	width: 100%;
+	padding: 10px;
+	background: var(--themeColor1);
+	color: #fff;
+	border: none;
+	border-radius: 80px;
+	cursor: pointer;
+}

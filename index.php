@@ -27,7 +27,7 @@
 				
 			</ul>
 			<ul class="navList" id="navList2">
-				<li id="loginItem"><a href="#">Login</a></li>
+				<li id="loginItem"><a href="login">Login</a></li>
 				<li id="signupItem"><a href="signup">Sign up</a></li>
 			</ul>
 		</div>

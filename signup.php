@@ -6,11 +6,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Slackerz: Create Account</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:300,400|Roboto|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/init.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/signup.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/loginSignup.css">
 </head>
 <body>
 	<div id="navbar">
@@ -27,7 +27,7 @@
 				
 			</ul>
 			<ul class="navList" id="navList2">
-				<li id="loginItem"><a href="#">Login</a></li>
+				<li id="loginItem"><a href="login">Login</a></li>
 				<li id="signupItem"><a href="signup">Sign up</a></li>
 			</ul>
 		</div>
@@ -51,26 +51,26 @@
 	?>
 	<div id="wrapper">
 		<div id="leftWrapper">
-			<img src="assets/img/profileData.png">
+			<img id="signupImg" src="assets/img/profileData.png">
 		</div>
 		<div id="rightWrapper">
 			<form method="post" action="assets/inc/signup.inc.php">
-			<h1>Create Account</h1>
+			<h1 id="formTitle">Sign up</h1>
 			<div class="textBox" id="caUsername">
-				<label for="ca-username"><i class="fas fa-user"></i></label>
-				<input type="text" name="ca-username" required>
+				<i class="fas fa-user"></i>
+				<input placeholder="Username" type="text" name="ca-username" required>
 			</div>
 			<div class="textBox" id="caEmail">
-				<label for="ca-email"><i class="fas fa-envelope"></i></label>
-				<input type="email" name="ca-email" required>
+				<i class="fas fa-envelope"></i>
+				<input placeholder="Email" type="email" name="ca-email" required>
 			</div>
 			<div class="textBox" id="caPass">
-				<label for="ca-pass"><i class="fas fa-lock"></i></label>
-				<input type="password" name="ca-password" required>
+				<i class="fas fa-lock"></i>
+				<input placeholder="Password" type="password" name="ca-password" required>
 			</div>
 			<div class="textBox" id="caPass2">
-				<label for="ca-pass2"><i class="fas fa-lock-open"></i></label>
-				<input type="password" name="ca-password2" required>
+				<i class="fas fa-lock-open"></i>
+				<input placeholder="Confirm password" type="password" name="ca-password2" required>
 			</div>
 			<div class="buttonBox" id="caSub">
 				<button type="submit" name="ca-submit">Create Account</button>
