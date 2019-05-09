@@ -36,3 +36,21 @@
 	    echo $sql . "<br>" . $e->getMessage() . "<br>";
 	    }
 	$conn = null;
+	try {
+	    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	    $sql = "CREATE TABLE workplaces (
+	    id int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	    ownerID int(11) NOT NULL,
+	    avatar LONGTEXT NOT NULL,
+	    name TINYTEXT NOT NULL)";
+
+	    $conn->exec($sql);
+	    echo "Table created successfully<br>";
+		}
+	catch(PDOException $e)
+	    {
+	    echo $sql . "<br>" . $e->getMessage() . "<br>";
+	    }
+	$conn = null;

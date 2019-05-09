@@ -6,7 +6,7 @@
 		$sql = "SELECT * FROM users WHERE username = ?;";
 		$stmt = mysqli_stmt_init($conn);
 		if(!mysqli_stmt_prepare($stmt,$sql)){
-			header("Location: ../../login.php?error=sqlerror");
+			header("Location: ../../login?error=sqlerror");
 			exit();
 		} else {
 			mysqli_stmt_bind_param($stmt,"s",$username);
@@ -15,24 +15,24 @@
 			if($row = mysqli_fetch_assoc($result)){
 				$passwordCheck = password_verify($password,$row['password']);
 				if($passwordCheck == false){
-					header("Location: ../../login.php?error=invalidpass");
+					header("Location: ../../login?error=invalidpass");
 					exit();
 				} elseif($passwordCheck == true){
 					session_start();
-					$_SESSION['id'] = $row['id'];
+					$_SESSION['uid'] = $row['id'];
 					$_SESSION['username'] = $row['username'];
 					$_SESSION['avatar'] = $row['avatar'];
-					header("Location: ../../main.php");
+					header("Location: ../../menu");
 				} else {
-					header("Location: ../../login.php?error=invalidpass");
+					header("Location: ../../login?error=invalidpass");
 					exit();
 				}
 			} else {
-				header("Location: ../../login.php?error=nouser");
+				header("Location: ../../login?error=nouser");
 				exit();
 			}
 		}
 	} else {
-		header("Location: ../../index.php");
+		header("Location: ../../index");
 		exit();
 	}

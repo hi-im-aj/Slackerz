@@ -1,9 +1,15 @@
+<?php
+	session_start();
+	if (isset($_SESSION['username'])) {
+		header("Location: menu");
+	} else {}
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Slackerz: Collaboration is everything</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:300,400|Roboto|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/init.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">

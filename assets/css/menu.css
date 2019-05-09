@@ -1,0 +1,123 @@
+#interface {
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	height: 75px;
+	background: #222;
+	width: 100vw;
+	font-family: "Raleway",serif;
+	border-top: .5px solid var(--themeColor2);
+}
+#interface button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: none;
+	background: var(--themeColor1);
+	padding: 15px 100px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 80px;
+	cursor: pointer;
+}
+#content {
+	background: #333;
+	position: absolute;
+	top: 75px;
+	width: 100vw;
+	height: calc(100vh - 150px);
+}
+#content #workplaceList {
+	background: #444;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 800px;
+	height: calc(100vh - 150px);
+}
+#workplaceList ul {
+	list-style: none;
+}
+#workplaceList ul li a {
+	padding: 25px 5px;
+	position: relative;
+}
+#workplaceList ul li a button {
+	width: calc(100% - 10px);
+	position: relative;
+	top: 1px;
+	padding: 20px;
+	margin: 5px 0;
+	border-radius: 6px;
+	border: none;
+	background: var(--themeColor1);
+	font-family: "Raleway",serif;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+#CW_modal {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(.5,.5,.5,.5),rgba(.5,.5,.5,.5));
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	display: none;
+}
+#CW_interface {
+	height: 500px;
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #555;
+	border: .5px solid var(--themeColor2);
+	border-radius: 6px;
+}
+#CW_exit {
+	position: absolute;
+	top: 1.5%;
+	right: 0;
+	transform: translateX(-50%);
+	color: var(--themeColor1);
+	font-size: 36px;
+	cursor: pointer;
+	padding: 5px;
+}
+#CW_interface form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#CW_interface form input {
+	font-size: 22px;
+	padding: 5px;
+	width: 260px;
+	float: right;
+	border: none;
+	color: var(--themeColor1);
+}
+#CW_interface form button {
+	font-size: 20px;
+	width: 100%;
+	padding: 10px;
+	background: var(--themeColor1);
+	color: #fff;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+}
+#CW_name {
+	margin: 10px;
+	width: 270px;
+	height: 37px;
+}
+#CW_submit {
+	margin: 10px;
+}
