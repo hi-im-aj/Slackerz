@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	if (isset($_SESSION['username'])) {
-		$username = $_SESSION['username'];
+	if (isset($_SESSION['uid'])) {
+		$userID = $_SESSION['uid'];
 	} else {
 		header("Location: login?error=loginfail");
 	}
@@ -34,12 +34,21 @@
 	</div>
 	<div id="content">
 		<div id="workplaceList">
-			<ul>
-				<li><a href="assets/inc/workplaceRedir"><button>Workplace Name</button></a></li>
-				<li><a href="assets/inc/workplaceRedir"><button>Workplace Name</button></a></li>
-			</ul>
 			<?php
-
+				require 'assets/inc/dbConn.inc.php';
+				$sql = "SELECT id, name FROM workplaces WHERE ownerID = ".$userID.";";
+				$result = mysqli_query($conn, $sql);
+				$data = [];
+				if(mysqli_num_rows($result) > 0){
+					while($row = mysqli_fetch_assoc($result)){
+						$data[] = $row;
+					}
+					echo "<ul>";
+					foreach($data as $i){
+						echo "<li><a href='workplace.php?id=".$i['id']."'><button>".$i['name']."</button></a></li>";
+					}
+					echo "</ul>";
+				}else{}
 			?>
 		</div>
 	</div>

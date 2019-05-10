@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(isset($_POST['cw-submit']) && isset($_SESSION['username'])){
+	if(isset($_POST['cw-submit']) && isset($_SESSION['uid'])){
 		require 'dbConn.inc.php';
 		$userID = $_SESSION['uid'];
 		$workplaceName = $_POST['cw-name'];

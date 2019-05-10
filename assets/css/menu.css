@@ -1,3 +1,6 @@
+body {
+	background: #333;
+}
 #interface {
 	position: fixed;
 	z-index: 100;
@@ -22,14 +25,12 @@
 	cursor: pointer;
 }
 #content {
-	background: #333;
 	position: absolute;
 	top: 75px;
 	width: 100vw;
 	height: calc(100vh - 150px);
 }
 #content #workplaceList {
-	background: #444;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -75,7 +76,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	background: #555;
+	background: #222;
 	border: .5px solid var(--themeColor2);
 	border-radius: 6px;
 }
@@ -91,7 +92,7 @@
 }
 #CW_interface form {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -101,7 +102,7 @@
 	width: 260px;
 	float: right;
 	border: none;
-	color: var(--themeColor1);
+	color: var(--themeColor2);
 }
 #CW_interface form button {
 	font-size: 20px;
