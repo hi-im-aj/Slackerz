@@ -37,7 +37,7 @@
 			<?php
 				require 'assets/inc/dbConn.inc.php';
 				$sql = "SELECT id, name FROM workplaces WHERE ownerID = ".$userID.";";
-				$result = mysqli_query($conn, $sql);
+				$result = mysqli_query($conn,$sql);
 				$data = [];
 				if(mysqli_num_rows($result) > 0){
 					while($row = mysqli_fetch_assoc($result)){

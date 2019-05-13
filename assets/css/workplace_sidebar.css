@@ -1,0 +1,49 @@
+#header {
+	height: 60px;
+	width: 100%;
+	position: relative;
+}
+#header:after {
+	content: "";
+	background: #ddd;
+	height: 1px;
+	width: calc(100% - 20px);
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#header h1 {
+	color: var(--themeColor2);
+	font-size: 26px;
+	margin: 0 10px;
+	overflow: hidden;
+	max-height: 30px;
+}
+#header h1 span {
+	color: var(--themeColor1);
+}
+#header #username {
+	color: #fff;
+	margin: 0 10px;
+}
+#channels {
+	display: inline-flex;
+	width: 100%;
+	position: relative;
+	margin: 10px 0;
+}
+#channels h1 {
+	color: #fff;
+	margin: 0 10px;
+}
+#channels #addChannel {
+	float: right;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	padding: 3px 5px;
+}
