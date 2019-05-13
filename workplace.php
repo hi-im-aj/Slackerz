@@ -42,5 +42,13 @@
 	<div id="sidebar">
 		<iframe id="sidebarFrame" src="assets/iframe/workplace_sidebar"></iframe>
 	</div>
+	<div id="chatWindow">
+		<div id="chatLog">
+			
+		</div>
+		<div id="chatInput">
+			<textarea></textarea>
+		</div>
+	</div>
 </body>
 </html>

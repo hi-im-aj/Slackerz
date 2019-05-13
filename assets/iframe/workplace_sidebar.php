@@ -19,24 +19,23 @@
 		<h1><?php echo $_SESSION['wn']; ?><span>.</span></h1>
 		<p id="username"><?php echo $_SESSION['username']; ?></p>
 	</div>
-	<div id="channels">
-		<h1>Channels</h1>
-		<a id="addChannel" href="../inc/createChannel"><i class="far fa-plus-square"></i></a>
-		<ul>
-			<?php
+	<div id="listBody">
+		<ul class="List1">
+		<li class="iHeader"><h1>Channels</h1><i class="far fa-plus-square addButton" id="addChannel"></i></a></li>
+		<li class="Push1 listItem"><p>Channel Example 1</p></li>
+		<li class="Push1 listItem"><p>Channel Example 2</p></li>
+		<?php
 
-			?>
-			<li><a href="#">TEST</a></li>
+		?>
+		<br>
 		</ul>
-	</div>
-	<div id="members">
-		<h1>Members</h1>
-		<a href="../inc/addMember"><i class="fas fa-user-plus"></i></a>
-		<ul>
-			<li><p><?php echo $_SESSION['username']; ?> (you)</p></li>
+		<ul class="List1">
+			<li class="iHeader"><h1>Members</h1><i class="fas fa-user-plus addButton" id="addMember"></i></a></li>
+			<li class="Push1 listItem"><p><?php echo $_SESSION['username']; ?> (you)</p></li>
 			<?php
 
 			?>
+		<br>
 		</ul>
 	</div>
 </body>

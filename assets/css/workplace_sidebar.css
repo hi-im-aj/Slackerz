@@ -24,26 +24,49 @@
 	color: var(--themeColor1);
 }
 #header #username {
-	color: #fff;
-	margin: 0 10px;
+	color: #ccc;
+	margin: 0 10px 0 20px;
 }
-#channels {
-	display: inline-flex;
+#listBody {
+	display: block;
 	width: 100%;
 	position: relative;
 	margin: 10px 0;
 }
-#channels h1 {
-	color: #fff;
-	margin: 0 10px;
+#listBody h1 {
+	color: var(--themeColor2);
+	font-size: 24px;
 }
-#channels #addChannel {
-	float: right;
-	font-size: 22px;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translate(-50%,-50%);
-	color: #fff;
+#listBody .addButton {
+	font-size: 20px;
+	color: #ccc;
 	padding: 3px 5px;
+	cursor: pointer;
+}
+#listBody .addButton:hover {
+	color: #fff;
+}
+#listBody .List1 {
+	display: block;
+	list-style: none;
+	margin: 0 10px;
+	width: 280px;
+}
+#listBody .List1 li p {
+	color: #ccc;
+	cursor: pointer;
+}
+#listBody .List1 li p:hover {
+	color: #fff;
+}
+#listBody .Push1 {
+	margin-left: 10px;
+}
+#listBody .iHeader {
+	display: inline-grid;
+	width: 280px;
+	grid-template-columns: 88% 12%;
+}
+.listItem {
+	line-height: 25px;
 }

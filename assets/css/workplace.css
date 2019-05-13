@@ -57,3 +57,39 @@ body {
 	background: #333;
 	border: none;
 }
+#chatWindow {
+	width: calc(100vw - 320px);
+	height: calc(100vh - 80px);
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#chatLog {
+	position: absolute;
+	width: calc(100vw - 320px - 20px);
+	height: calc(80% - 20px);
+	border: 1px solid var(--themeColor2);
+	border-radius: 6px;
+	top: 10px;
+	left: 10px;
+}
+#chatInput {
+	position: absolute;
+	width: calc(100vw - 320px - 20px);
+	height: calc(20% - 10px);
+	bottom: 10px;
+	left: 10px;
+}
+#chatInput textarea {
+	max-width: calc(100% - 10px);
+	min-width: calc(100% - 10px);
+	max-height: calc(100% - 10px);
+	min-height: calc(100% - 10px);
+	border: 1px solid var(--themeColor2);
+	border-radius: 6px;
+	padding: 5px;
+	font-family: "Raleway",serif;
+}
+textarea:focus {
+	border-color: var(--themeColor1);
+}

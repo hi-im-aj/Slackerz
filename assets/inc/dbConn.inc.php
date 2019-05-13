@@ -1,10 +1,10 @@
 <?php
 $servername = "localhost";
-$db_username = "root";
-$db_password = "";
-$db_name = "slackerzDB";
+$username = "root";
+$password = "";
+$dbname = "slackerzDB";
 
-$conn = mysqli_connect($servername, $db_username, $db_password, $db_name);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
 	die("Connection failed: ".mysqli_connect_error());
